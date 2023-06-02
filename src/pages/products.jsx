@@ -16,7 +16,7 @@ function ProductPage() {
       {
         PRODUCTS.map((product)=>(
             <li>
-              <Link to={`/products/${product.id}`}>
+              <Link to={`${product.id}`}>
                 {product.title}
               </Link>
             </li>

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <h1>Home</h1>
-      <button onClick={()=>navigate('/products')}>products</button>
+      <button onClick={()=>navigate('products')}>products</button>
     </div>
   )
 }
