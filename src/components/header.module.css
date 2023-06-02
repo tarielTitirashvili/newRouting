@@ -1,0 +1,26 @@
+.header{
+  max-width: 60rem;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.list{
+  display: flex;
+  gap: 2rem;
+}
+
+.list a {
+  color: var(--color-primary-400);
+  text-decoration: none;
+  transition-duration: 400ms;
+  transition-timing-function: ease-out;
+}
+
+.list a:hover,
+.list a.active {
+  /* animation: active-nav 500ms linear 1 backwards; */
+  color: var(--color-button-primary-100);
+  font-size: large;
+}
