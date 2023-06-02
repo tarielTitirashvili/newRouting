@@ -8,12 +8,12 @@ import ProductDetails from "./pages/productDetails";
 
 const router = createBrowserRouter([
   {
-    path: '/root', 
+    path: '/', 
     element: <RootLayout />,
     errorElement: <Error />,
     children:[
       // without / will be relative path
-      { path: '', element: <HomePage /> },
+      { index: true, element: <HomePage /> }, //path: ''
       { path: 'contact', element: <ContactPage /> },
       { path: 'products', element: <ProductPage /> }, 
       { path: 'products/:productId', element: <ProductDetails /> }
